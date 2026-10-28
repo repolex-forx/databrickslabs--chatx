@@ -8,7 +8,7 @@
     {
       "@id": "https://repolex.ai/r/databrickslabs/chatx/commit/13266d340c02b53a566e674280769f07da24a7b2",
       "git:hexsha": "13266d340c02b53a566e674280769f07da24a7b2",
-      "repolex:parseStatus": "metadata_complete"
+      "repolex:parseStatus": "ast_complete"
     }
   ]
 }
