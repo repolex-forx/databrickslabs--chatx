@@ -1,1 +1,117 @@
-Initializing
+# Repolex Knowledge Graph of databrickslabs/chatx
+
+RDF knowledge graph data for [databrickslabs/chatx](https://github.com/databrickslabs/chatx), parsed by [repolex](https://repolex.ai).
+
+> **Note**: This data is experimental and subject to change without notice.
+
+## How to use this data
+
+The easiest way to get started is to install the [rlex](https://github.com/repolex-ai/rlex) query tool:
+
+```bash
+cargo install --git https://github.com/repolex-ai/rlex
+```
+
+Verify the install:
+
+```bash
+rlex --help
+```
+
+**rlex is designed to be used primarily by LLMs in a terminal.** Start up your favorite AI assistant and ask it to use rlex. It handles the SPARQL — you just ask questions in plain English.
+
+To load this repo's data:
+
+```bash
+rlex download databrickslabs/chatx
+```
+
+Consult `rlex --help` for other options, including SPARQL queries, HTTP server, and interactive visualization.
+
+## Data structure
+
+All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) (`.nq.gz`), a standard RDF format that can be loaded into any triplestore or graph database.
+
+```
+.
+├── aggregate
+│   ├── ast
+│   │   └── 13266d340c02b53a566e674280769f07da24a7b2
+│   │       └── chunk-001.nq.gz
+│   └── repolex
+│       └── 13266d340c02b53a566e674280769f07da24a7b2
+│           └── chunk-001.nq.gz
+├── blob
+│   ├── 14cce6f77bdfb109500ca6d91b941eb0d2f0cb91.nq.gz
+│   ├── 175619d466e1628c8a95ccbc08fb87317281eb9e.nq.gz
+│   ├── 1ba5d2e3d794aaf537a3020d86b7c3041d2dc040.nq.gz
+│   ├── 21cbf1bdeef4b8e73407a23637a6ff25507a3c97.nq.gz
+│   ├── 24ee5b1be9961e38a503c8e764b7385dbb6ba124.nq.gz
+│   ├── 2585ebbdd2819fa06f927774ce15f1d828831bf6.nq.gz
+│   ├── 25995201f9975cc69de0ce7d846b4dc2a5bca82b.nq.gz
+│   ├── 28152e661ff9856da8e81ba7e7d22cb68a8bcc63.nq.gz
+│   ├── 34ab9507c2c2e611303741bfe81ab013a17ca677.nq.gz
+│   ├── 3d44b9dfe7ebc8722f5ce28a1eba3ec8080ec08c.nq.gz
+│   ├── 4e1eca45766d231bcf3181d4121fb6cb64065997.nq.gz
+│   ├── 4f6f78accb480935e1d87983ea8a5de9709a1d80.nq.gz
+│   ├── 539fbfc851dd6b4694d81a966946da0647c79cbe.nq.gz
+│   ├── 5a465e694e8f5bbb7c51f7c80db6c89b1d4a289a.nq.gz
+│   ├── 5a6e02ce2f30784c0cb0332bc865a7c1c1c40516.nq.gz
+│   ├── 5e60f0c4d72593273ad55c654cbdae8702944c93.nq.gz
+│   ├── 61e4cfd1b0f1f810c88fabca348a01e8b520bed6.nq.gz
+│   ├── 63b0e850d4755a4363a5a06f73d5e566e99ce263.nq.gz
+│   ├── 6784c3ef1c15d314643544d9ae2a690ea6b11843.nq.gz
+│   ├── 6b2646b0ba62bcce0325bb5975fa9e61e556bd69.nq.gz
+│   ├── 6f72723afdb8062c27f0363e147c1597ccc7282b.nq.gz
+│   ├── 734898a8fadd1abf12a7ab66e677644320c81567.nq.gz
+│   ├── 76fcc415e85eb170862b0ae86e8dd11b836ead03.nq.gz
+│   ├── 91314bb7b7d431e8e7831ea3a53af8c62f3fe364.nq.gz
+│   ├── 9bb86d97d2217b9b4b524dbc70503a89cc8ded91.nq.gz
+│   ├── a236d74c91f4cb1fa9d3fbeaa740dc8f33a911b9.nq.gz
+│   ├── a824eb8f409f39b7914e2ed3e14cde5e30ee2b5a.nq.gz
+│   ├── b0ac48465e9ecf488a2fa2d74270177ee4d0510c.nq.gz
+│   ├── bde1dcf543cd940c342c16564dde766a62b0a562.nq.gz
+│   ├── c14e25aeb589d06cb62c9e7a0bb528d29455d8ad.nq.gz
+│   ├── c691a6db3e4e9c0313e9d4340e2df2c9b659afcc.nq.gz
+│   ├── d104edd314c8cf73823327f54465e360476d0d4b.nq.gz
+│   ├── d4838e3639f49864a4cd4ca233c23ba7ef142da1.nq.gz
+│   ├── def8484c4bcaac9df13bc0e2e41f69f420ebd3a5.nq.gz
+│   ├── e69de29bb2d1d6434b8b29ae775ad8c2e48c5391.nq.gz
+│   ├── e7b83ff58c673292ebbc0013a4f46190d9f1abf1.nq.gz
+│   ├── e867952130841407d4f3d53fc06912735b15ad15.nq.gz
+│   └── f74426a0dc1043289b48b17db3c55ff50cdb1570.nq.gz
+├── branch
+│   └── branch.nq.gz
+├── commit
+│   └── commit.nq.gz
+├── filetree
+│   └── 13266d340c02b53a566e674280769f07da24a7b2.nq.gz
+├── issue
+│   └── issue.nq.gz
+├── pr
+│   └── pr.nq.gz
+└── tag
+    └── tag.nq.gz
+
+13 directories, 46 files
+```
+
+| Directory | What it contains |
+|-----------|-----------------|
+| `blob/` | Per-file AST graphs, content-addressed by git blob SHA. Each file in the source repo gets its own graph. |
+| `aggregate/ast/` | Combined AST graph per parsed commit. Merges all blob graphs for a snapshot of the entire codebase at that point. |
+| `aggregate/lsp/` | Language Server Protocol enrichment: resolved symbols, definitions, references, and type information. |
+| `aggregate/dataflow/` | Interprocedural data flow edges between functions and modules. |
+| `aggregate/repolex/` | Combined graph (AST + LSP + dataflow) per commit. |
+| `commit/` | Git commit metadata (author, date, message, parent links). |
+| `branch/` | Branch metadata. |
+| `tag/` | Tag metadata. |
+| `filetree/` | File tree snapshots per commit (which files existed and their blob SHAs). |
+| `audit/` | Code architecture and graph audit reports per commit. |
+
+## Source repository
+
+[databrickslabs/chatx](https://github.com/databrickslabs/chatx)
+
+---
+*Parsed on 2026-10-28 by [repolex](https://repolex.ai)*

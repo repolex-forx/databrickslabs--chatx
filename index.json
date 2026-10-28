@@ -1,0 +1,11 @@
+{
+  "org": "databrickslabs",
+  "repo": "chatx",
+  "versions": [
+    {
+      "commit": "13266d340c02b53a566e674280769f07da24a7b2",
+      "tag": "",
+      "parsed_at": "2026-10-28T13:01:15.608043+00:00"
+    }
+  ]
+}
